@@ -1,0 +1,138 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_hub",
+                "type": "address"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "_accessTag",
+                "type": "bytes32"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "addr",
+                "type": "address"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "tag",
+                "type": "bytes32"
+            }
+        ],
+        "name": "AddressMissingHubTag",
+        "type": "error"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "id",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "uint256",
+                "name": "utilized",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "limit",
+                "type": "uint256"
+            }
+        ],
+        "name": "AvailableCreditLimitExceeded",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "accessTag",
+        "outputs": [
+            {
+                "internalType": "bytes32",
+                "name": "",
+                "type": "bytes32"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "hub",
+        "outputs": [
+            {
+                "internalType": "contract PWNHub",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "id",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "limit",
+                "type": "uint256"
+            }
+        ],
+        "name": "utilizeCredit",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "",
+                "type": "bytes32"
+            }
+        ],
+        "name": "utilizedCredit",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]

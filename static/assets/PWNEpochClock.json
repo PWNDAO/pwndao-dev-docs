@@ -1,0 +1,1074 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "initialEpochTimestamp",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "currentTimestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "InitialEpochTimestampInFuture",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "INITIAL_EPOCH_TIMESTAMP",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SECONDS_IN_EPOCH",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "currentEpoch",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x60a060405234801561001057600080fd5b5060405161025138038061025183398101604081905261002f9161005e565b42811115610056576040516313218df960e21b815242600482015260240160405180910390fd5b608052610077565b60006020828403121561007057600080fd5b5051919050565b6080516101b461009d60003960008181604b0152818160a9015260e001526101b46000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806339c5ea9b1461004657806358cc124514610080578063766718081461008a575b600080fd5b61006d7f000000000000000000000000000000000000000000000000000000000000000081565b6040519081526020015b60405180910390f35b61006d6224ea0081565b6100926100a5565b60405161ffff9091168152602001610077565b60007f00000000000000000000000000000000000000000000000000000000000000004210156100d55750600090565b60006224ea006101057f000000000000000000000000000000000000000000000000000000000000000042610136565b61010f9190610149565b61011a90600161016b565b92915050565b634e487b7160e01b600052601160045260246000fd5b8181038181111561011a5761011a610120565b60008261016657634e487b7160e01b600052601260045260246000fd5b500490565b8082018082111561011a5761011a61012056fea2646970667358221220ec399246279f8c5199c0e8a01306eb85544080eeb4d51ef381b93397c379500764736f6c63430008120033",
+    "sourceMap": "385:1675:53:-:0;;;981:331;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1148:15;1124:21;:39;1120:129;;;1186:52;;-1:-1:-1;;;1186:52:53;;1222:15;1186:52;;;349:25:82;322:18;;1186:52:53;;;;;;;1120:129;1258:47;;385:1675;;14:184:82;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;-1:-1:-1;176:16:82;;14:184;-1:-1:-1;14:184:82:o;203:177::-;385:1675:53;;;;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c806339c5ea9b1461004657806358cc124514610080578063766718081461008a575b600080fd5b61006d7f000000000000000000000000000000000000000000000000000000000000000081565b6040519081526020015b60405180910390f35b61006d6224ea0081565b6100926100a5565b60405161ffff9091168152602001610077565b60007f00000000000000000000000000000000000000000000000000000000000000004210156100d55750600090565b60006224ea006101057f000000000000000000000000000000000000000000000000000000000000000042610136565b61010f9190610149565b61011a90600161016b565b92915050565b634e487b7160e01b600052601160045260246000fd5b8181038181111561011a5761011a610120565b60008261016657634e487b7160e01b600052601260045260246000fd5b500490565b8082018082111561011a5761011a61012056fea2646970667358221220ec399246279f8c5199c0e8a01306eb85544080eeb4d51ef381b93397c379500764736f6c63430008120033",
+    "sourceMap": "385:1675:53:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;795:48;;;;;;;;160:25:82;;;148:2;133:18;795:48:53;;;;;;;;507:52;;550:9;507:52;;1613:444;;;:::i;:::-;;;370:6:82;358:19;;;340:38;;328:2;313:18;1613:444:53;196:188:82;1613:444:53;1660:6;1789:23;1771:15;:41;1767:80;;;-1:-1:-1;1835:1:53;;1613:444::o;1767:80::-;1884:13;550:9;1901:41;1919:23;1901:15;:41;:::i;:::-;1900:62;;;;:::i;:::-;:66;;1965:1;1900:66;:::i;:::-;1884:82;1613:444;-1:-1:-1;;1613:444:53:o;389:127:82:-;450:10;445:3;441:20;438:1;431:31;481:4;478:1;471:15;505:4;502:1;495:15;521:128;588:9;;;609:11;;;606:37;;;623:18;;:::i;654:217::-;694:1;720;710:132;;764:10;759:3;755:20;752:1;745:31;799:4;796:1;789:15;827:4;824:1;817:15;710:132;-1:-1:-1;856:9:82;;654:217::o;876:125::-;941:9;;;962:10;;;959:36;;;975:18;;:::i",
+    "linkReferences": {},
+    "immutableReferences": {
+      "51465": [
+        {
+          "start": 75,
+          "length": 32
+        },
+        {
+          "start": 169,
+          "length": 32
+        },
+        {
+          "start": 224,
+          "length": 32
+        }
+      ]
+    }
+  },
+  "methodIdentifiers": {
+    "INITIAL_EPOCH_TIMESTAMP()": "39c5ea9b",
+    "SECONDS_IN_EPOCH()": "58cc1245",
+    "currentEpoch()": "76671808"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.18+commit.87f61d96\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"initialEpochTimestamp\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"currentTimestamp\",\"type\":\"uint256\"}],\"name\":\"InitialEpochTimestampInFuture\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"INITIAL_EPOCH_TIMESTAMP\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"SECONDS_IN_EPOCH\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"currentEpoch\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"One epoch is 4 weeks long and the first epoch is 1. `INITIAL_EPOCH_TIMESTAMP` is set at deployment time and can be used to sync the clock between different chains.\",\"kind\":\"dev\",\"methods\":{\"constructor\":{\"params\":{\"initialEpochTimestamp\":\"The timestamp of the beginning of the first epoch.\"}},\"currentEpoch()\":{\"returns\":{\"_0\":\"The current epoch number.\"}}},\"stateVariables\":{\"INITIAL_EPOCH_TIMESTAMP\":{\"details\":\"This timestamp is set at deployment time and can be used to sync the clock between different chains.\"},\"SECONDS_IN_EPOCH\":{\"details\":\"2,419,200 seconds = 4 weeks\"}},\"title\":\"PWN Epoch Clock contract.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"INITIAL_EPOCH_TIMESTAMP()\":{\"notice\":\"The timestamp of the first epoch.\"},\"SECONDS_IN_EPOCH()\":{\"notice\":\"The number of seconds in an epoch.\"},\"constructor\":{\"notice\":\"PWNEpochClock constructor.\"},\"currentEpoch()\":{\"notice\":\"Returns the current epoch number.\"}},\"notice\":\"A contract that provides the current epoch number.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/PWNEpochClock.sol\":\"PWNEpochClock\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"src/PWNEpochClock.sol\":{\"keccak256\":\"0x40f2a4bd411418be1f7ba0ffef9c77bddd39ce6acfb14a94bd8955f931d62934\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://e979fc32e7f429a7b6880fd5bc2f65b3eecc243347950f333a8d9f91badc04aa\",\"dweb:/ipfs/QmP8URUek56T9TwZFdsqFWVbiKhdhhqZQXezUJZJLkimQW\"]},\"src/lib/Error.sol\":{\"keccak256\":\"0x8f54795e326660cef0caf4dbb3adfb2b404203babf485df1b373a930f2877b9c\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://f5510b769bb8639e9310405f846c53a188503de2aa8c9b41862543f99e872e90\",\"dweb:/ipfs/QmPLNuydDHYGUGogzvdWFjzPSMSBqBztKxLn6udTzVbUto\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.18+commit.87f61d96"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "initialEpochTimestamp",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "currentTimestamp",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "InitialEpochTimestampInFuture"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "INITIAL_EPOCH_TIMESTAMP",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "SECONDS_IN_EPOCH",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "currentEpoch",
+          "outputs": [
+            {
+              "internalType": "uint16",
+              "name": "",
+              "type": "uint16"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "constructor": {
+            "params": {
+              "initialEpochTimestamp": "The timestamp of the beginning of the first epoch."
+            }
+          },
+          "currentEpoch()": {
+            "returns": {
+              "_0": "The current epoch number."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "INITIAL_EPOCH_TIMESTAMP()": {
+            "notice": "The timestamp of the first epoch."
+          },
+          "SECONDS_IN_EPOCH()": {
+            "notice": "The number of seconds in an epoch."
+          },
+          "constructor": {
+            "notice": "PWNEpochClock constructor."
+          },
+          "currentEpoch()": {
+            "notice": "Returns the current epoch number."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/PWNEpochClock.sol": "PWNEpochClock"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/PWNEpochClock.sol": {
+        "keccak256": "0x40f2a4bd411418be1f7ba0ffef9c77bddd39ce6acfb14a94bd8955f931d62934",
+        "urls": [
+          "bzz-raw://e979fc32e7f429a7b6880fd5bc2f65b3eecc243347950f333a8d9f91badc04aa",
+          "dweb:/ipfs/QmP8URUek56T9TwZFdsqFWVbiKhdhhqZQXezUJZJLkimQW"
+        ],
+        "license": "GPL-3.0-only"
+      },
+      "src/lib/Error.sol": {
+        "keccak256": "0x8f54795e326660cef0caf4dbb3adfb2b404203babf485df1b373a930f2877b9c",
+        "urls": [
+          "bzz-raw://f5510b769bb8639e9310405f846c53a188503de2aa8c9b41862543f99e872e90",
+          "dweb:/ipfs/QmPLNuydDHYGUGogzvdWFjzPSMSBqBztKxLn6udTzVbUto"
+        ],
+        "license": "GPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/PWNEpochClock.sol",
+    "id": 51523,
+    "exportedSymbols": {
+      "Error": [
+        52544
+      ],
+      "PWNEpochClock": [
+        51522
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "41:2020:53",
+    "nodes": [
+      {
+        "id": 51455,
+        "nodeType": "PragmaDirective",
+        "src": "41:23:53",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".18"
+        ]
+      },
+      {
+        "id": 51457,
+        "nodeType": "ImportDirective",
+        "src": "66:40:53",
+        "nodes": [],
+        "absolutePath": "src/lib/Error.sol",
+        "file": "./lib/Error.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 51523,
+        "sourceUnit": 52545,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 51456,
+              "name": "Error",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 52544,
+              "src": "75:5:53",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 51522,
+        "nodeType": "ContractDefinition",
+        "src": "385:1675:53",
+        "nodes": [
+          {
+            "id": 51462,
+            "nodeType": "VariableDeclaration",
+            "src": "507:52:53",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 51459,
+              "nodeType": "StructuredDocumentation",
+              "src": "415:87:53",
+              "text": "@notice The number of seconds in an epoch.\n @dev 2,419,200 seconds = 4 weeks"
+            },
+            "functionSelector": "58cc1245",
+            "mutability": "constant",
+            "name": "SECONDS_IN_EPOCH",
+            "nameLocation": "531:16:53",
+            "scope": 51522,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51460,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "507:7:53",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "325f3431395f323030",
+              "id": 51461,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "550:9:53",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_2419200_by_1",
+                "typeString": "int_const 2419200"
+              },
+              "value": "2_419_200"
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 51465,
+            "nodeType": "VariableDeclaration",
+            "src": "795:48:53",
+            "nodes": [],
+            "constant": false,
+            "documentation": {
+              "id": 51463,
+              "nodeType": "StructuredDocumentation",
+              "src": "576:159:53",
+              "text": "@notice The timestamp of the first epoch.\n @dev This timestamp is set at deployment time and can be used to sync the clock between different chains."
+            },
+            "functionSelector": "39c5ea9b",
+            "mutability": "immutable",
+            "name": "INITIAL_EPOCH_TIMESTAMP",
+            "nameLocation": "820:23:53",
+            "scope": 51522,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 51464,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "795:7:53",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 51489,
+            "nodeType": "FunctionDefinition",
+            "src": "981:331:53",
+            "nodes": [],
+            "body": {
+              "id": 51488,
+              "nodeType": "Block",
+              "src": "1024:288:53",
+              "nodes": [],
+              "statements": [
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 51474,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 51471,
+                      "name": "initialEpochTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 51468,
+                      "src": "1124:21:53",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">",
+                    "rightExpression": {
+                      "expression": {
+                        "id": 51472,
+                        "name": "block",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -4,
+                        "src": "1148:5:53",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_block",
+                          "typeString": "block"
+                        }
+                      },
+                      "id": 51473,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1154:9:53",
+                      "memberName": "timestamp",
+                      "nodeType": "MemberAccess",
+                      "src": "1148:15:53",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1124:39:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 51483,
+                  "nodeType": "IfStatement",
+                  "src": "1120:129:53",
+                  "trueBody": {
+                    "id": 51482,
+                    "nodeType": "Block",
+                    "src": "1165:84:53",
+                    "statements": [
+                      {
+                        "errorCall": {
+                          "arguments": [
+                            {
+                              "expression": {
+                                "id": 51478,
+                                "name": "block",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": -4,
+                                "src": "1222:5:53",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_magic_block",
+                                  "typeString": "block"
+                                }
+                              },
+                              "id": 51479,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberLocation": "1228:9:53",
+                              "memberName": "timestamp",
+                              "nodeType": "MemberAccess",
+                              "src": "1222:15:53",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            ],
+                            "expression": {
+                              "id": 51475,
+                              "name": "Error",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 52544,
+                              "src": "1186:5:53",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_contract$_Error_$52544_$",
+                                "typeString": "type(library Error)"
+                              }
+                            },
+                            "id": 51477,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberLocation": "1192:29:53",
+                            "memberName": "InitialEpochTimestampInFuture",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 52503,
+                            "src": "1186:35:53",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_error_pure$_t_uint256_$returns$__$",
+                              "typeString": "function (uint256) pure"
+                            }
+                          },
+                          "id": 51480,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1186:52:53",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 51481,
+                        "nodeType": "RevertStatement",
+                        "src": "1179:59:53"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "expression": {
+                    "id": 51486,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 51484,
+                      "name": "INITIAL_EPOCH_TIMESTAMP",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 51465,
+                      "src": "1258:23:53",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 51485,
+                      "name": "initialEpochTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 51468,
+                      "src": "1284:21:53",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1258:47:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 51487,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1258:47:53"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 51466,
+              "nodeType": "StructuredDocumentation",
+              "src": "850:126:53",
+              "text": "@notice PWNEpochClock constructor.\n @param initialEpochTimestamp The timestamp of the beginning of the first epoch."
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 51469,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51468,
+                  "mutability": "mutable",
+                  "name": "initialEpochTimestamp",
+                  "nameLocation": "1001:21:53",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51489,
+                  "src": "993:29:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 51467,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "993:7:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "992:31:53"
+            },
+            "returnParameters": {
+              "id": 51470,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1024:0:53"
+            },
+            "scope": 51522,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 51521,
+            "nodeType": "FunctionDefinition",
+            "src": "1613:444:53",
+            "nodes": [],
+            "body": {
+              "id": 51520,
+              "nodeType": "Block",
+              "src": "1668:389:53",
+              "nodes": [],
+              "statements": [
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 51498,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "expression": {
+                        "id": 51495,
+                        "name": "block",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -4,
+                        "src": "1771:5:53",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_block",
+                          "typeString": "block"
+                        }
+                      },
+                      "id": 51496,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1777:9:53",
+                      "memberName": "timestamp",
+                      "nodeType": "MemberAccess",
+                      "src": "1771:15:53",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "<",
+                    "rightExpression": {
+                      "id": 51497,
+                      "name": "INITIAL_EPOCH_TIMESTAMP",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 51465,
+                      "src": "1789:23:53",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1771:41:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 51502,
+                  "nodeType": "IfStatement",
+                  "src": "1767:80:53",
+                  "trueBody": {
+                    "id": 51501,
+                    "nodeType": "Block",
+                    "src": "1814:33:53",
+                    "statements": [
+                      {
+                        "expression": {
+                          "hexValue": "30",
+                          "id": 51499,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1835:1:53",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "functionReturnParameters": 51494,
+                        "id": 51500,
+                        "nodeType": "Return",
+                        "src": "1828:8:53"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "assignments": [
+                    51504
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 51504,
+                      "mutability": "mutable",
+                      "name": "epoch",
+                      "nameLocation": "1892:5:53",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 51520,
+                      "src": "1884:13:53",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 51503,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1884:7:53",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 51514,
+                  "initialValue": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 51513,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 51511,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "components": [
+                          {
+                            "commonType": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            "id": 51508,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "leftExpression": {
+                              "expression": {
+                                "id": 51505,
+                                "name": "block",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": -4,
+                                "src": "1901:5:53",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_magic_block",
+                                  "typeString": "block"
+                                }
+                              },
+                              "id": 51506,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberLocation": "1907:9:53",
+                              "memberName": "timestamp",
+                              "nodeType": "MemberAccess",
+                              "src": "1901:15:53",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "nodeType": "BinaryOperation",
+                            "operator": "-",
+                            "rightExpression": {
+                              "id": 51507,
+                              "name": "INITIAL_EPOCH_TIMESTAMP",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 51465,
+                              "src": "1919:23:53",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "src": "1901:41:53",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "id": 51509,
+                        "isConstant": false,
+                        "isInlineArray": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "TupleExpression",
+                        "src": "1900:43:53",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "/",
+                      "rightExpression": {
+                        "id": 51510,
+                        "name": "SECONDS_IN_EPOCH",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51462,
+                        "src": "1946:16:53",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "1900:62:53",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "+",
+                    "rightExpression": {
+                      "hexValue": "31",
+                      "id": 51512,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1965:1:53",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    "src": "1900:66:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1884:82:53"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 51517,
+                        "name": "epoch",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51504,
+                        "src": "1990:5:53",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 51516,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "1983:6:53",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_uint16_$",
+                        "typeString": "type(uint16)"
+                      },
+                      "typeName": {
+                        "id": 51515,
+                        "name": "uint16",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1983:6:53",
+                        "typeDescriptions": {}
+                      }
+                    },
+                    "id": 51518,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1983:13:53",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "functionReturnParameters": 51494,
+                  "id": 51519,
+                  "nodeType": "Return",
+                  "src": "1976:20:53"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 51490,
+              "nodeType": "StructuredDocumentation",
+              "src": "1521:87:53",
+              "text": "@notice Returns the current epoch number.\n @return The current epoch number."
+            },
+            "functionSelector": "76671808",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "currentEpoch",
+            "nameLocation": "1622:12:53",
+            "parameters": {
+              "id": 51491,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1634:2:53"
+            },
+            "returnParameters": {
+              "id": 51494,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51493,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51521,
+                  "src": "1660:6:53",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 51492,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1660:6:53",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1659:8:53"
+            },
+            "scope": 51522,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "PWNEpochClock",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 51458,
+          "nodeType": "StructuredDocumentation",
+          "src": "108:277:53",
+          "text": "@title PWN Epoch Clock contract.\n @notice A contract that provides the current epoch number.\n @dev One epoch is 4 weeks long and the first epoch is 1.\n `INITIAL_EPOCH_TIMESTAMP` is set at deployment time and can be used to sync the clock between different chains."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          51522
+        ],
+        "name": "PWNEpochClock",
+        "nameLocation": "394:13:53",
+        "scope": 51523,
+        "usedErrors": [
+          52503
+        ]
+      }
+    ],
+    "license": "GPL-3.0-only"
+  },
+  "id": 53
+}

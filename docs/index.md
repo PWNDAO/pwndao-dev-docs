@@ -1,30 +1,18 @@
-# PWN Explained
+---
+description: Welcome to the PWN developer documentation.
+---
 
-[**PWN**](https://pwn.xyz/) **is a universal, peer-to-peer lending platform.**&#x20;
+# Welcome!
 
-_Use any token as collateral, invest in fixed-interest loans, and enjoy predictable returns, all without price-based liquidation risk._
+PWN Protocol is a trustless and permissionless set of smart contracts. With PWN you can **use any token as collateral, invest in fixed-interest loans, and enjoy predictable returns, all without price-based liquidation risk**. In this developer documentation, you can learn about the Core contracts, protocol architecture, PWN DAO, libraries and tools we've developed.
 
-In the true spirit of DeFi composability, PWN users can borrow against—or lend using—any asset in their wallet (ERC-20, NFT, and even a bundle of both), while enjoying absolute flexibility on the loan terms (LTV, duration, APR, etc.).&#x20;
+## Documentation structure
 
-The oracle-less nature of the protocol protects all PWN loans from price-based liquidations. The only way to lose collateral is to miss the repayment deadline.
+* [**Core**](smart-contracts/core/): Learn about the Core smart contracts that make up the PWN Protocol
+* [**PWN DAO**](smart-contracts/pwn-dao/): Our governance structure
+* [**Tools**](smart-contracts/tools/): Tools that enhance the possibilities of PWN
+* [**Libraries**](smart-contracts/libraries/): Various libraries we have developed to use (not only) in PWN
 
-PWN opens up **new liquidity avenues, composability options, and leverage opportunities**, while giving its users both optimized **capital efficiency** and **predictability** on both sides of the loan. A win on all fronts.
+## Open-source
 
-PWN is:
-
-* **trustless**
-* **permissionless**
-* **immutable**
-* **oracle-less**
-
-The PWN Protocol is currently deployed on **Ethereum, Polygon, Optimism, Arbitrum, Base, Binance Smart Chain, and Cronos.**
-
-<figure><img src="/img/gitbook-assets/image (53).png" alt=""/><figcaption></figcaption></figure>
-
-### Getting started with PWN
-
-**How are the PWN docs organized?**
-
-* [**FAQ**](faq.md)**:** Find an answer to all the questions you might ask yourself about PWN.
-* [**Guides**](Guides/strategies.md)**:** Your step-by-step tutorials to get the best out of PWN.&#x20;
-* [**Developer documentation**](https://dev-docs.pwn.xyz/)**:**  Discover the inner workings of PWN protocol.&#x20;
+All contracts used in the PWN protocol are under _GNU General Public_ License _v3.0_. Please refer to [LICENSE.md](https://github.com/PWNFinance/pwn_contracts/blob/master/LICENSE.md) on our GitHub for more information about the license.&#x20;

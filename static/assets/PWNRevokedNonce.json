@@ -1,0 +1,140 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "hub",
+                "type": "address"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "_accessTag",
+                "type": "bytes32"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "",
+                "type": "bytes32"
+            }
+        ],
+        "name": "CallerMissingHubTag",
+        "type": "error"
+    },
+    {
+        "inputs": [],
+        "name": "InvalidMinNonce",
+        "type": "error"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "minNonce",
+                "type": "uint256"
+            }
+        ],
+        "name": "MinNonceSet",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "nonce",
+                "type": "uint256"
+            }
+        ],
+        "name": "NonceRevoked",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "nonce",
+                "type": "uint256"
+            }
+        ],
+        "name": "isNonceRevoked",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "nonce",
+                "type": "uint256"
+            }
+        ],
+        "name": "revokeNonce",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "nonce",
+                "type": "uint256"
+            }
+        ],
+        "name": "revokeNonce",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "minNonce",
+                "type": "uint256"
+            }
+        ],
+        "name": "setMinNonce",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]

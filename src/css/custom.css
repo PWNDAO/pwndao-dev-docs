@@ -37,6 +37,7 @@
   --ifm-heading-font-family: "Screener-Regular";
   --ifm-font-family-monospace: "Supreme-Regular";
   --sidebar-divider-color: #000000;
+  --ifm-alert-background-color: #ffffff;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -61,4 +62,10 @@
   margin: 0.75rem
       var(--ifm-menu-link-padding-horizontal);
   background-color: var(--sidebar-divider-color);
+}
+
+details {
+  --ifm-alert-background-color: var(--ifm-background-color) !important;
+  --ifm-alert-border-color: var(--ifm-color-primary) !important;
+  --ifm-alert-background-color-highlight: rgba(0, 255, 224, 0.15) !important;
 }

@@ -3,8 +3,8 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'PWN Docs',
-  tagline: 'PWN is a universal, peer-to-peer lending platform',
+  title: 'PWN Developer Docs',
+  tagline: 'The official developer documentation for PWN.',
   favicon: 'img/favicon.ico',
   url: 'https://docs.pwn.xyz',
   baseUrl: '/',
@@ -62,12 +62,12 @@ const config: Config = {
       items: [
         {
           href: 'https://app.pwn.xyz/',
-          label: 'Try it out!',
+          label: 'App',
           position: 'right',
         },
         {
-          href: 'https://pwn.xyz/',
-          label: 'Website',
+          href: 'https://github.com/pwndao',
+          label: 'GitHub',
           position: 'right',
         },
       ],
@@ -75,6 +75,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ['solidity'],
     },
   } satisfies Preset.ThemeConfig,
 };
