@@ -1,0 +1,64 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+ @font-face {
+  font-family: Supreme-Regular;
+  src: url("/static/fonts/Supreme-Regular.woff2") format("woff2"),
+    url("/static/fonts/Supreme-Regular.woff") format("woff"),
+    url("/static/fonts/Supreme-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Screener-Regular";
+  src: url("/static/fonts/screener-400.woff2") format("woff2"),
+    url("/static/fonts/screener-400.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #086459;
+  --ifm-color-primary-dark: #086459;
+  --ifm-color-primary-darker: #0D4D45;
+  --ifm-color-primary-darkest: #0D4D45;
+  --ifm-color-primary-light: #00FFE0;
+  --ifm-color-primary-lighter: #00FFE0;
+  --ifm-color-primary-lightest: #00FFE0;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: "Supreme-Regular";
+  --ifm-heading-font-family: "Screener-Regular";
+  --ifm-font-family-monospace: "Supreme-Regular";
+  --sidebar-divider-color: #000000;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #00FFE0;
+  --ifm-color-primary-dark: #0D4D45;
+  --ifm-color-primary-darker: #0D4D45;
+  --ifm-color-primary-darkest: #0F2926;
+  --ifm-color-primary-light: #00FFE0;
+  --ifm-color-primary-lighter: #00FFE0;
+  --ifm-color-primary-lightest: #00FFE0;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-background-color: #111111;
+  --sidebar-divider-color: #ffffff;
+}
+
+.navbar__link {
+  font-family: "Screener-Regular";
+}
+
+.sidebar-divider {
+  margin: 0.75rem
+      var(--ifm-menu-link-padding-horizontal);
+  background-color: var(--sidebar-divider-color);
+}
