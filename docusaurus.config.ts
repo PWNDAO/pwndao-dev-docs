@@ -47,7 +47,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'assets/thumbnail.png',
     navbar: {
       logo: {
         alt: 'PWN Logo',
