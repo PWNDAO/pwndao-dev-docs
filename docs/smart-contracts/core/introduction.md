@@ -3,7 +3,7 @@
 The PWN Protocol can be challenging to understand at first. This article is a good starting point if you're new to PWN and want to learn more about the technical aspects. We will look at **the most important smart contracts, how they interact with each other and how users interact with the protocol.** Lastly, we will talk about immutability and trustless properties.&#x20;
 
 :::info
-Note, this article does not provide a complete overview of the PWN Protocol. Please read the [Deep Dive](deep-dive.md) and the [Smart Contract Reference](smart-contract-reference/) if you're looking for a comprehensive overview of the PWN Protocol.
+Note, this article does not provide a complete overview of the PWN Protocol. Please read the [Deep Dive](deep-dive.md) and the [Smart Contract Reference](smart-contract-reference/loan-types/simple-loan.md) if you're looking for a comprehensive overview of the PWN Protocol.
 :::
 
 The following topics are covered in this article:
@@ -107,4 +107,4 @@ Even if the PWNDAO were captured and made a malicious change, it could only paus
 
 ## Conclusion
 
-We discussed the main components of the PWN Protocol, how users interact with the protocol, the security properties of the protocol, and how the protocol is designed to be extendable by adding new features. If you're looking for a more comprehensive overview of the PWN Protocol, we suggest reading the [Deep Dive](deep-dive.md) and the [Smart Contract Reference](smart-contract-reference/).
+We discussed the main components of the PWN Protocol, how users interact with the protocol, the security properties of the protocol, and how the protocol is designed to be extendable by adding new features. If you're looking for a more comprehensive overview of the PWN Protocol, we suggest reading the [Deep Dive](deep-dive.md) and the [Smart Contract Reference](smart-contract-reference/loan-types/simple-loan.md).

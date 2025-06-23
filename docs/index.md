@@ -8,10 +8,10 @@ PWN Protocol is a trustless and permissionless set of smart contracts. With PWN 
 
 ## Documentation structure
 
-* [**Core**](smart-contracts/core/): Learn about the Core smart contracts that make up the PWN Protocol
+* [**Core**](smart-contracts/core/introduction.md): Learn about the Core smart contracts that make up the PWN Protocol
 * [**PWN DAO**](smart-contracts/pwn-dao/): Our governance structure
-* [**Tools**](smart-contracts/tools/): Tools that enhance the possibilities of PWN
-* [**Libraries**](smart-contracts/libraries/): Various libraries we have developed to use (not only) in PWN
+* [**Tools**](smart-contracts/tools/token-bundler.md): Tools that enhance the possibilities of PWN
+* [**Libraries**](smart-contracts/libraries/multitoken.md): Various libraries we have developed to use (not only) in PWN
 
 ## Open-source
 

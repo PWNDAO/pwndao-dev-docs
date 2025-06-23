@@ -171,4 +171,4 @@ The time lock delay is expected to increase as the protocol matures and PWNDAO i
 
 ## What now?
 
-This deep dive article has provided a comprehensive analysis of the architecture and properties of the PWN Protocol. If you want to learn more see our [Smart Contract Reference](smart-contract-reference/) for all contracts and the [`pwn_contracts`](https://github.com/PWNFinance/pwn_contracts) GitHub repository. Check out the tests to see how other contracts can interact with the protocol. If you have any questions feel free to reach out to us on our [Discord](https://discord.gg/aWghBQSdHv).
+This deep dive article has provided a comprehensive analysis of the architecture and properties of the PWN Protocol. If you want to learn more see our [Smart Contract Reference](smart-contract-reference/loan-types/simple-loan.md) for all contracts and the [`pwn_contracts`](https://github.com/PWNFinance/pwn_contracts) GitHub repository. Check out the tests to see how other contracts can interact with the protocol. If you have any questions feel free to reach out to us on our [Discord](https://discord.gg/aWghBQSdHv).

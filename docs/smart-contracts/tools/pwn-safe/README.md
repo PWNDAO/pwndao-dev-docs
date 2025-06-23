@@ -10,7 +10,7 @@ PWN Safe is a set of smart contracts which allow the **tokenization of&#x20;**_*
 
 * [**Architecture overview**](architecture.md): A high-level look at the contract architecture
 * [**Security considerations**](security-considerations.md): Let's talk about vulnerabilities to be aware of
-* [**Smart contract reference**](smart-contract-reference/): A detailed description of each contract
+* [**Smart contract reference**](smart-contract-reference/atr-module/README.md): A detailed description of each contract
 
 #### Check out a talk from PWN's own Naim and Josef about PWN Safe at Devcon 6
 

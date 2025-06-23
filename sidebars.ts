@@ -10,20 +10,12 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Core',
-          link: {
-            type: 'doc',
-            id: 'smart-contracts/core/README',
-          },
           items: [
             'smart-contracts/core/introduction',
             'smart-contracts/core/deep-dive',
             {
               type: 'category',
               label: 'Smart Contract Reference',
-              link: {
-                type: 'doc',
-                id: 'smart-contracts/core/smart-contract-reference/README',
-              },
               items: [
                 {
                   type: 'category',
@@ -39,19 +31,11 @@ const sidebars: SidebarsConfig = {
                 {
                   type: 'category',
                   label: 'Loan Types',
-                  link: {
-                    type: 'doc',
-                    id: 'smart-contracts/core/smart-contract-reference/loan-types/README',
-                  },
                   items: ['smart-contracts/core/smart-contract-reference/loan-types/simple-loan'],
                 },
                 {
                   type: 'category',
                   label: 'Proposals',
-                  link: {
-                    type: 'doc',
-                    id: 'smart-contracts/core/smart-contract-reference/proposals/README',
-                  },
                   items: [
                     {
                       type: 'category',
@@ -76,10 +60,6 @@ const sidebars: SidebarsConfig = {
                 {
                   type: 'category',
                   label: 'Peripheral Contracts',
-                  link: {
-                    type: 'doc',
-                    id: 'smart-contracts/core/smart-contract-reference/peripheral-contracts/README',
-                  },
                   items: [
                     {
                       type: 'category',
@@ -120,10 +100,6 @@ const sidebars: SidebarsConfig = {
                 {
                   type: 'category',
                   label: 'Miscellaneous',
-                  link: {
-                    type: 'doc',
-                    id: 'smart-contracts/core/smart-contract-reference/miscellaneous/README',
-                  },
                   items: [
                     'smart-contracts/core/smart-contract-reference/miscellaneous/pwn-fee-calculator',
                     'smart-contracts/core/smart-contract-reference/miscellaneous/pwn-signature-checker',
@@ -147,19 +123,11 @@ const sidebars: SidebarsConfig = {
             {
               type: 'category',
               label: 'Governance',
-              link: {
-                type: 'doc',
-                id: 'smart-contracts/pwn-dao/governance/README',
-              },
               items: ['smart-contracts/pwn-dao/governance/optimistic', 'smart-contracts/pwn-dao/governance/token'],
             },
             {
               type: 'category',
               label: 'Tokens',
-              link: {
-                type: 'doc',
-                id: 'smart-contracts/pwn-dao/tokens/README',
-              },
               items: [
                 'smart-contracts/pwn-dao/tokens/pwn',
                 'smart-contracts/pwn-dao/tokens/stpwn',
@@ -182,10 +150,6 @@ const sidebars: SidebarsConfig = {
             {
               type: 'category',
               label: 'Miscellaneous',
-              link: {
-                type: 'doc',
-                id: 'smart-contracts/pwn-dao/miscellaneous/README',
-              },
               items: [
                 { type: 'link', label: 'Errors', href: 'https://github.com/PWNDAO/pwn_dao/blob/main/src/lib/Error.sol' },
                 { type: 'link', label: 'EpochPowerLib', href: 'https://github.com/PWNDAO/pwn_dao/blob/main/src/lib/EpochPowerLib.sol' },
@@ -196,10 +160,6 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Tools',
-          link: {
-            type: 'doc',
-            id: 'smart-contracts/tools/README',
-          },
           items: [
             {
               type: 'category',
@@ -214,10 +174,6 @@ const sidebars: SidebarsConfig = {
                 {
                   type: 'category',
                   label: 'Smart Contract Reference',
-                  link: {
-                    type: 'doc',
-                    id: 'smart-contracts/tools/pwn-safe/smart-contract-reference/README',
-                  },
                   items: [
                     'smart-contracts/tools/pwn-safe/smart-contract-reference/pwn-safe-factory',
                     {
@@ -253,10 +209,6 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Libraries',
-          link: {
-            type: 'doc',
-            id: 'smart-contracts/libraries/README',
-          },
           items: ['smart-contracts/libraries/multitoken'],
         },
         'smart-contracts/contract-addresses',
