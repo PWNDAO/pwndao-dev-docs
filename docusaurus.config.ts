@@ -6,7 +6,7 @@ const config: Config = {
   title: 'PWN Developer Docs',
   tagline: 'The official developer documentation for PWN.',
   favicon: 'img/favicon.ico',
-  url: 'https://docs.pwn.xyz',
+  url: process.env.CF_PAGES_URL ?? 'https://docs.pwn.xyz',
   baseUrl: '/',
   organizationName: 'pwndao',
   projectName: 'pwndao-docs',
