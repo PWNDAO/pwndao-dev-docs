@@ -48,6 +48,9 @@ const config: Config = {
 
   themeConfig: {
     image: 'assets/thumbnail.png',
+    colorMode: {
+      defaultMode: 'dark',
+    },
     navbar: {
       logo: {
         alt: 'PWN Logo',
