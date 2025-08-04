@@ -62,6 +62,7 @@ const config: Config = {
           paddingRight: '20px',
         },
       },
+      title: 'Developer Documentation',
       items: [
         {
           href: 'https://app.pwn.xyz/',

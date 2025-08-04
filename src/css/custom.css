@@ -38,6 +38,7 @@
   --ifm-font-family-monospace: "Supreme-Regular";
   --sidebar-divider-color: #000000;
   --ifm-alert-background-color: #ffffff;
+  --ifm-navbar-height: 4rem;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -73,4 +74,25 @@ details {
   --ifm-alert-background-color: var(--ifm-background-color) !important;
   --ifm-alert-border-color: var(--ifm-color-primary) !important;
   --ifm-alert-background-color-highlight: rgba(0, 255, 224, 0.15) !important;
+}
+
+.navbar__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar__logo {
+  margin-bottom: 5px;
+}
+
+.navbar__title {
+  font-size: 0.75rem;
+  color: var(--ifm-navbar-link-color);
+  line-height: 1;
+  font-family: "Supreme-Regular";
+}
+
+.navbar-sidebar__back {
+  display: none;
 }
